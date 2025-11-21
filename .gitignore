@@ -1,0 +1,74 @@
+# -------------------
+# Python & Django
+# -------------------
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+backend/env/
+backend/.env
+*.sqlite3
+db.sqlite3
+
+# Django migrations
+backend/**/migrations/
+!backend/**/migrations/__init__.py
+
+# -------------------
+# Node.js Frontend
+# -------------------
+frontend/node_modules/
+frontend/.env
+frontend/dist/
+frontend/.next/
+frontend/.vite/
+
+# -------------------
+# OS & Editor Junk
+# -------------------
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+
+# VSCode
+.vscode/
+
+# -------------------
+# Dependency Lock
+# -------------------
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Node modules for frontend
+/frontend/node_modules/
+
+# React build output
+/frontend/dist/
+/frontend/.vite/
+
+# Python & Django
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+backend/env/
+backend/venv/
+backend/staticfiles/
+backend/media/
+db.sqlite3
+*.env
+
+# VSCode
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
