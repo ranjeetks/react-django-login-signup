@@ -1,6 +1,7 @@
 // ✅ SignupForm.tsx - Converted to Bootstrap 5+
 import { useState } from "react";
 import axios from "axios";
+import api from "../services/api";
 
 const SignupForm = () => {
   const [formData, setFormData] = useState({
@@ -24,7 +25,7 @@ const SignupForm = () => {
     setLoading(true);
 
     try {
-      await axios.post("http://localhost:8000/api/auth/register/", {
+      await api.post("api/auth/register/", {
         username: formData.username,
         email: formData.email,
         password: formData.password,

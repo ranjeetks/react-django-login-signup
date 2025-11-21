@@ -24,10 +24,11 @@ const LoginForm = () => {
     setLoading(true);
 
     try {
-      const res = await api.post(
-        "http://localhost:8000/api/auth/token/",
-        formData,
-      );
+      // const res = await api.post(
+      //   "http://localhost:8000/api/auth/token/",
+      //   formData,
+      // );
+      const res = await api.post("auth/token/", formData);
       localStorage.setItem("access_token", res.data.access);
       localStorage.setItem("refresh_token", res.data.refresh);
       navigate("/dashboard");

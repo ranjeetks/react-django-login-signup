@@ -1,7 +1,8 @@
 // src/services/authService.ts
 import axios from "axios";
 
-const API_BASE = "http://localhost:8000/api/auth";
+//const API_BASE = "http://localhost:8000/api/auth";
+const API_BASE = import.meta.env.VITE_API_URL+"/auth";
 
 export const getAccessToken = () => localStorage.getItem("access_token");
 export const getRefreshToken = () => localStorage.getItem("refresh_token");

@@ -1,6 +1,7 @@
 // ✅ UserInfo.tsx - Converted to Bootstrap 5+
 import { useEffect, useState } from "react";
 import axios from "axios";
+import api from "../services/api";
 
 const UserInfo = () => {
   const [user, setUser] = useState<any>(null);
@@ -16,7 +17,7 @@ const UserInfo = () => {
     }
 
     axios
-      .get("http://localhost:8000/api/auth/me/", {
+      api.get("api/auth/me/", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => setUser(res.data))
