@@ -1,6 +1,5 @@
 // ✅ SignupForm.tsx - Converted to Bootstrap 5+
 import { useState } from "react";
-import axios from "axios";
 import api from "../services/api";
 
 const SignupForm = () => {
