@@ -38,7 +38,6 @@ from decouple import config
 #ALLOWED_HOSTS = ["localhost", "127.0.0.1", ".onrender.com"]
 DEBUG = os.getenv("DEBUG", "False") == "True"
 SECRET_KEY=os.getenv("SECRET_KEY")
-ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "*").split(",")
 
 
 # Application definition
@@ -163,9 +162,16 @@ REST_FRAMEWORK = {
 # CORS_ALLOWED_ORIGINS = [
 #     "http://localhost:5173",  # Vite dev server
 # ]
-
-CORS_ALLOWED_ORIGINS = os.getenv("CORS_ALLOWED_ORIGINS", "").split(",")
 # Allow all origins for development purposes
 CORS_ALLOW_CREDENTIALS = True
+def env_list(var_name):
+    value = os.getenv(var_name, "")
+    return [v.strip() for v in value.split(",") if v.strip()]
 
-CSRF_TRUSTED_ORIGINS = os.getenv("CSRF_TRUSTED_ORIGINS", "").split(",")
+# ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "*").split(",")
+# CORS_ALLOWED_ORIGINS = os.getenv("CORS_ALLOWED_ORIGINS", "").split(",")
+# CSRF_TRUSTED_ORIGINS = os.getenv("CSRF_TRUSTED_ORIGINS", "").split(",")
+
+ALLOWED_HOSTS = env_list("ALLOWED_HOSTS")
+CORS_ALLOWED_ORIGINS = env_list("CORS_ALLOWED_ORIGINS")
+CSRF_TRUSTED_ORIGINS = env_list("CSRF_TRUSTED_ORIGINS")
