@@ -7,7 +7,7 @@ Perfect for dashboards, SaaS apps, admin panels, and real freelance client tasks
 
 ## 🚀 Live Demo & Source Code (Add After Deployment)
 - **Live Demo:** _Coming Soon_
-- **Frontend Repo:** https://react-django-login-signup.vercel.app/
+- **Frontend Repo:** https://react-django-login-signup.vercel.app
 - **Backend Repo:** https://react-django-login-signup.onrender.com
 
 ---
