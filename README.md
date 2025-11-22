@@ -1,14 +1,31 @@
-# 🧩 React Login + Django Auth — Full-Stack Authentication Micro-Demo
+![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white)
+![DRF](https://img.shields.io/badge/DRF-ff1709?logo=django&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-B73BFE?logo=vite&logoColor=FFD62E)
+![JWT](https://img.shields.io/badge/JWT-000?logo=jsonwebtokens&logoColor=white)
+![Render](https://img.shields.io/badge/Render-000000?logo=render&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white)
+
+# 🔐 React + Django Login & Signup (JWT Authentication)
 
 A clean and production-ready micro-demo showing **JWT-based login & signup**, built with **React (Vite + TypeScript)** on the frontend and **Django REST Framework + Simple JWT** on the backend.  
 Perfect for dashboards, SaaS apps, admin panels, and real freelance client tasks.
 
 ---
 
-## 🚀 Live Demo & Source Code (Add After Deployment)
-- **Live Demo:** _Coming Soon_
-- **Frontend Repo:** https://react-django-login-signup.vercel.app
-- **Backend Repo:** https://react-django-login-signup.onrender.com
+## 🚀 Live Demo
+
+- **Frontend Live:** https://react-django-login-signup.vercel.app
+- **Backend Live API:** https://react-django-login-signup.onrender.com
+- **GitHub Repository:** https://github.com/ranjeet-singh/react-django-login-signup
+
+
+---
+
+## 🖼️ Project Thumbnail
+
+<img src="./screenshots/thumbnail_react_django_login_signup.png" alt="Project Thumbnail" width="600"/>
 
 ---
 
@@ -58,7 +75,7 @@ backend/
 ├── auth_api_demo/
 ├── templates/
 ├── users/
-└── venv/
+
 ```
 
 ### **Frontend**
@@ -116,19 +133,22 @@ Authorization: Bearer <access_token>
 
 ---
 
-## 🖼️ Screenshots
+## 📸 Screenshots
 
-**Login Page**  
-![Login](./screenshots/login.png)
+### **Login Page**
+<img src="./screenshots/login.png" alt="Login Screenshot" width="700"/>
 
-**Dashboard**  
-![Dashboard](./screenshots/dashboard.png)
+### **Signup Page**
+<img src="./screenshots/sign-up.png" alt="Signup Screenshot" width="700"/>
 
-**Signup Page**  
-![Sign-up](./screenshots/sign-up.png)
+### **Dashboard Page**
+<img src="./screenshots/dashboard.png" alt="Dashboard Screenshot" width="700"/>
 
-**Logout Button**  
-![Logout](./screenshots/logout.png)
+### **Logout Page**
+<img src="./screenshots/logout.png" alt="Logout Screenshot" width="700"/>
+
+### **Backend Root (API Overview)**
+<img src="./screenshots/backend_root.png" alt="Backend Root Screenshot" width="700"/>
 
 ---
 
